@@ -5,6 +5,12 @@
 
 body {
   display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3343ad;
+  margin: 0;
 }
 
 .card {
@@ -17,7 +23,6 @@ body {
   overflow: hidden;
   transform: skewX(-5deg);
   border-radius: 3px;
-  margin: auto;
   box-shadow: 10px 6px 2px rgba(0, 0, 0, 0.3);
 
   h4 {
