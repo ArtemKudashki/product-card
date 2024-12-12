@@ -24,13 +24,19 @@ showCards();
 function showCards() {
   for (const card of cards) {
     let html = template.innerHTML;
-  
+
     for (const key in card) {
       const value = card[key];
-  
+
       html = html.replace(key, value)
     }
-  
+
     document.body.innerHTML += html
   }
+
+  document.querySelectorAll(".card>img").forEach(img => {
+    img.addEventListener("load", () => {
+      img.parentElement.hidden = false;
+    })
+  })
 }
